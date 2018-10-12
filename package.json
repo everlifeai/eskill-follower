@@ -1,0 +1,12 @@
+{
+  "name": "elife-follower",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "cote": "^0.17.1",
+    "elife-utils": "everlifeai/elife-utils"
+  },
+  "description": "Allow Avatars to Follow/Unfollow each other",
+  "author": "charles.lobo@gmail.com"
+}
