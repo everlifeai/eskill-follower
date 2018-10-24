@@ -36,6 +36,10 @@ function registerWithCommMgr() {
         type: 'register-msg-handler',
         mskey: msKey,
         mstype: 'msg',
+        mshelp: [
+            { cmd: '/follow', txt: 'follow an avatar' },
+            { cmd: '/unfollow', txt: 'unfollow an avatar' },
+        ],
     }, (err) => {
         if(err) u.showErr(err)
     })
@@ -56,10 +60,10 @@ function startMicroservice() {
         if(!req.msg) return cb()
 
         try {
-            const rx = /^follow  *(.*)/i
+            const rx = /^\/follow  *(.*)/i
             let m = req.msg.match(rx)
             if(!m) {
-                const rex = /^unfollow  *(.*)/i
+                const rex = /^\/unfollow  *(.*)/i
                 let ms = req.msg.match(rex)
                 if(!ms) return cb()
                 else{
