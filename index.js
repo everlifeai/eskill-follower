@@ -88,7 +88,7 @@ function startMicroservice() {
         key: 'everlife-ssb-svc',
     })
     function handleFollowUnFollow(type, id) {
-        client.send({ type: type, id: id }, (err) => {
+        client.send({ type: type, userid: id }, (err) => {
             if(err) u.showErr(err)
         })
     }
