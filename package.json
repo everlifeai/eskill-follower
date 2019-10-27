@@ -1,6 +1,6 @@
 {
   "name": "elife-follower",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "index.js",
   "license": "MIT",
   "description": "Allow Avatars to Follow/Unfollow each other",
